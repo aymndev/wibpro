@@ -1,0 +1,43 @@
+/* Shared site stylesheet: index.css */
+:root{
+    --bg: #0b0b0b;
+    --panel: #111111;
+    --muted: #bdbdbd;
+    --accent: #F54927;
+    --accent-dark: #c43a1f;
+}
+*{box-sizing: border-box}
+html,body{height:100%;margin:0;padding:0;font-family: Arial, Helvetica, sans-serif;background:var(--bg);color:var(--muted)}
+
+/* Header */
+#container{display:flex;justify-content:space-between;align-items:center;padding:18px 40px;background:var(--panel)}
+#my-title h1{color:white;margin:0;font-size:22px;letter-spacing:1px}
+#main-menu ul{display:flex;gap:1.6rem;padding:0;margin:0;align-items:center}
+#main-menu li{list-style:none}
+#main-menu a{color:var(--muted);text-decoration:none;font-size:16px}
+#main-menu a:hover{color:var(--accent)}
+
+/* Login button / anchor styled as button */
+.btn{display:inline-block;background:var(--accent);color:white;padding:9px 15px;border-radius:8px;text-decoration:none;font-weight:600}
+.btn:hover{background:var(--accent-dark)}
+
+/* Main content area */
+#c-page{padding:60px 40px;color:#fff}
+#c-page h1{color:var(--accent);margin:0 0 10px}
+#c-page p{color:var(--muted);line-height:1.5}
+
+/* Simple responsive rules */
+@media (max-width:720px){
+    #container{flex-direction:column;gap:12px;align-items:flex-start}
+    #my-title h1{font-size:20px}
+    #main-menu ul{flex-wrap:wrap;gap:10px}
+}
+
+/* Page-specific helpers for pages/login form */
+.page-content{min-height:calc(100vh - 90px);display:flex;justify-content:center;align-items:center}
+#login-container{background:#fff;padding:24px;border-radius:8px;color:#111;width:320px}
+#login-container h2{text-align:center;margin-top:0}
+label{display:block;margin-top:10px}
+input{width:100%;padding:8px;margin-top:6px}
+#login-container button{width:100%;padding:10px;margin-top:14px;background:var(--panel);color:#fff;border:none;border-radius:6px;cursor:pointer}
+#login-container button:hover{background:var(--accent)}
