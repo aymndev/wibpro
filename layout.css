@@ -11,7 +11,7 @@
 
 
 :root{
-    --bg: #0b0b0b;
+    --bg: #000000;
     --panel: #111111;
     --muted: #bdbdbd;
     --accent: #F54927;
@@ -57,3 +57,9 @@ label{display:block;margin-top:10px}
 input{width:100%;padding:8px;margin-top:6px}
 #login-container button{width:100%;padding:10px;margin-top:14px;background:var(--panel);color:#fff;border:none;border-radius:6px;cursor:pointer}
 #login-container button:hover{background:var(--accent)}
+
+#c-page {
+   padding: 60px 40px;
+   color: #fff;
+   background: none; /* <-- override the black background */
+}
