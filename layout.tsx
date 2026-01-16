@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Geist } from "next/font/google";
+import ThemeToggle from "../components/ThemeToggle";
 
 import "./layout.css";
 
@@ -30,7 +31,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </nav>
           </div>
 
-          <div id="login">
+          <div id="login" className="flex items-center gap-4">
+            <ThemeToggle />
             <Link className="btn" href="/login">Log in</Link>
           </div>
         </div>

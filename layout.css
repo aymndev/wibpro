@@ -63,3 +63,27 @@ input{width:100%;padding:8px;margin-top:6px}
    color: #fff;
    background: none; /* <-- override the black background */
 }
+
+/* Light theme overrides */
+[data-theme="light"] {
+    --bg: #ffffff;
+    --panel: #f4f4f5;
+    --muted: #333333;
+    --accent: #0ea5e9; /* blue-ish */
+    --accent-dark: #0284c7;
+}
+
+/* Theme toggle button */
+.theme-toggle{
+    background: transparent;
+    border: 1px solid rgba(255,255,255,0.08);
+    color: var(--muted);
+    padding:6px 10px;border-radius:8px;cursor:pointer;font-size:18px
+}
+.theme-toggle:hover{background:rgba(255,255,255,0.02)}
+
+/* When in light theme adjust toggle look */
+[data-theme="light"] .theme-toggle{border-color:rgba(0,0,0,0.06);color:var(--muted)}
+#login{
+    gap:1.5rem;
+}
