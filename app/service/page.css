@@ -1,0 +1,40 @@
+#my-container{
+    display: flex;
+    justify-content:space-between;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center ;
+    margin-top: 1rem;
+    
+    
+}
+#services{
+    display: flex;
+    gap:16rem;
+    margin-top: 3rem;
+    
+    
+}
+#tittle-s{
+    color:#F4320B;
+}
+h2{
+    color:#00D7F8;
+}
+
+
+img{
+    border-radius: 50%;
+}
+h2{
+    margin-left: rem;
+}
+#description{
+    font-size: 23px;
+}
+
+#my-services{
+    background-color: #F4320B;
+    height: 400px;
+    width:260px
+}
