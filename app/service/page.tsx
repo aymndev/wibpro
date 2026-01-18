@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import "./page.css"
 export default function service() {
 
@@ -48,6 +49,14 @@ export default function service() {
 
 
             </div>
+=======
+
+export default function service (){
+
+    return(
+        <div>
+            <h1>servece</h1>
+>>>>>>> 373630c5c5d439f8d8896fbed7b397f926e02ed0
         </div>
 
 
